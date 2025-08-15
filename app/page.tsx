@@ -1,9 +1,12 @@
+import Banner from "@/app/components/Banner";
+import FeatureSection from "@/app/components/FeatureSection";
 
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <h1 className="text-9xl leading-tight text-red-800">Hiiiiiiiiiiii</h1>
+    <div className="flex flex-col justify-center">
+       <Banner />
+        <FeatureSection/>
     </div>
   );
 }

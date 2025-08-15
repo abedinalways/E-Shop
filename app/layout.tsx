@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import {Inter, Mulish, Sora, SUSE} from "next/font/google";
 import "./styles/globals.css";
+import Navbar from "@/app/components/Navbar";
+
 
 
 const inter=Inter({
@@ -39,6 +41,11 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${sora.className} ${suse.className} ${mulish.className} ${inter.className} antialiased`}>
+
+      <div className="flex flex-col relative">
+
+          <Navbar/>
+      </div>
         <main>{children}</main>
       </body>
     </html>
